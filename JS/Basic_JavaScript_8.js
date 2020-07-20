@@ -51,3 +51,10 @@ function countdown(){
         }
     tick();
 }
+
+const str1 = "hello";
+const str2 = "world";
+
+function concat(){
+    document.getElementById("cat").innerHTML = str1.concat(" ", str2)
+}
