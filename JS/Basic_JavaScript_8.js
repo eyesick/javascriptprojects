@@ -37,3 +37,17 @@ function string(){
     var b = a.valueOf();
     document.getElementById("string_sample").innerHTML = b;
 }
+
+function countdown(){
+    var seconds = document.getElementById("seconds").value
+
+    function tick(){
+        seconds = seconds -1;
+        timer.innerHTML = seconds;
+        setTimeout(tick, 1000)
+    if (seconds == -1 ){
+        alert("times up")
+    }
+        }
+    tick();
+}
